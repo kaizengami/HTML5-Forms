@@ -1,0 +1,25 @@
+{
+  "name": "HTML5-Forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod": "parcel build src/index.html --public-url ./",
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaizengami/HTML5-Forms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaizengami/HTML5-Forms/issues"
+  },
+  "homepage": "https://github.com/kaizengami/HTML5-Forms#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.0"
+  }
+}
