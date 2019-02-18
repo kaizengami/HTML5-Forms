@@ -181,7 +181,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./normalize.css":"scss/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./normalize.css":"scss/normalize.css","./..\\fonts\\ProximaNova-Light.ttf":[["ProximaNova-Light.636e1ce8.ttf","fonts/ProximaNova-Light.ttf"],"fonts/ProximaNova-Light.ttf"],"./..\\fonts\\ProximaNova-Regular.ttf":[["ProximaNova-Regular.e47654dc.ttf","fonts/ProximaNova-Regular.ttf"],"fonts/ProximaNova-Regular.ttf"],"./..\\fonts\\ProximaNova-Semibold.ttf":[["ProximaNova-Semibold.1a9f263d.ttf","fonts/ProximaNova-Semibold.ttf"],"fonts/ProximaNova-Semibold.ttf"],"./..\\fonts\\ProximaNova-Bold.ttf":[["ProximaNova-Bold.c57e70e9.ttf","fonts/ProximaNova-Bold.ttf"],"fonts/ProximaNova-Bold.ttf"],"./..\\img\\logo.png":[["logo.cecc779a.png","img/logo.png"],"img/logo.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -208,7 +208,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57362" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62565" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

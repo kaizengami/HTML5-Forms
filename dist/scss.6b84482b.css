@@ -347,7 +347,207 @@ template {
 [hidden] {
   display: none;
 }
+@font-face {
+  font-family: "ProximaNova";
+  src: local("../fonts/ProximaNova-Light"), local("../fonts/ProximaNova-Light"), url("ProximaNova-Light.636e1ce8.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("../fonts/ProximaNova-Regular"), local("../fonts/ProximaNova-Regular"), url("ProximaNova-Regular.e47654dc.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("../fonts/ProximaNova-Semibold"), local("../fonts/ProximaNova-Semibold"), url("ProximaNova-Semibold.1a9f263d.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("../fonts/ProximaNova-Bold"), local("../fonts/ProximaNova-Bold"), url("ProximaNova-Bold.c57e70e9.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 body {
-  background-color: powderblue;
+  background-color: #eceef5;
+  font-family: "ProximaNova";
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  padding: 63px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #6f7692;
+  padding: 18px 43px;
+  border-radius: 5px;
+  border: 1px solid rgba(111, 118, 146, 0.3);
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.header-button:hover {
+  border: 1px solid rgba(111, 118, 146, 0.5);
+}
+
+.header-logo {
+  height: 100px;
+  width: 100px;
+  background-image: url("logo.cecc779a.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0.1;
+}
+
+.main {
+  background-color: #fff;
+  color: #6f7692;
+  border: 1px solid rgba(111, 118, 146, 0.3);
+}
+
+.form-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid rgba(111, 118, 146, 0.15);
+}
+
+.your-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  border-right: 2px solid rgba(111, 118, 146, 0.15);
+}
+
+.your-order-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 70px;
+}
+
+.form-header-title {
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-header-title .icon-offset {
   font-size: 20px;
+  position: absolute;
+  top: -3px;
+  left: -30px;
+}
+
+.your-order-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 36px 2px;
+  letter-spacing: 1px;
+}
+
+.your-order-item {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.your-order-item span {
+  font-size: 10px;
+  display: block;
+  padding: 14px 0px;
+  opacity: 0.6;
+}
+
+.your-order-right {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0px;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+.your-order-button {
+  font-size: 13px;
+  letter-spacing: 1px;
+  min-width: 170px;
+  padding: 18px 20px;
+  border: 1px solid rgba(111, 118, 146, 0.3);
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: border 0.2s, background 0.2s;
+}
+
+.your-order-button:hover {
+  background: #5aa7a9;
+  border: 1px solid #6f7692;
+}
+
+.place-order {
+  background: #5fcac6;
+  color: #fff;
+}
+
+.print-a-quote {
+  background: #f7f7fa;
+  color: #6f7692;
+  margin-top: 10px;
+}
+
+.print-a-quote:hover {
+  background: #fff;
+}
+
+.help-center {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding: 30px 0px;
+  padding-left: 60px;
+  padding-right: 30px;
+  max-width: 330px;
+}
+
+.help-center-text {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 15px 0px;
+  opacity: 0.5;
+}
+
+.help-center-contacts {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+
+.help-center-contact:not(:first-child) {
+  padding-left: 10px;
 }
