@@ -42,7 +42,10 @@
             </div>
             <div class="your-order-right">
               <button class="your-order-button place-order">place order</button>
-              <button class="your-order-button print-a-quote">
+              <button
+                class="your-order-button print-a-quote"
+                onclick="window.print()"
+              >
                 print a quote
               </button>
             </div>
@@ -56,11 +59,133 @@
               If you need assistance while placing your order, contact one of
               our beloved Project Managers by phone or email.
             </div>
-            <div class="help-center-contacts">
+            <address class="help-center-contacts">
               <div class="help-center-contact">+971 (0) 555 555</div>
               <div class="help-center-contact">help@qtest.com</div>
-            </div>
+            </address>
           </div>
+        </section>
+        <section class="form-wrapper">
+          <form id="checkout" action="#">
+            <div class="form-select-media">
+              <div class="translate-source-title">
+                select what you want to translate
+              </div>
+              <fieldset>
+                <div class="translate-source-media">
+                  <div class="translate-source-media-button">
+                    <label for="media-button-website">
+                      <input
+                        type="radio"
+                        name="mediatype"
+                        id="media-button-website"
+                        value="website"
+                        required
+                      />
+                      <span class="media-button-label-wrapper">
+                        <img src="img/media-website.png" />
+                        <span class="media-button-label-text">Website</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="translate-source-media-button">
+                    <label for="media-button-documents">
+                      <input
+                        type="radio"
+                        name="mediatype"
+                        id="media-button-documents"
+                        value="documents"
+                        checked
+                      />
+                      <span class="media-button-label-wrapper">
+                        <img src="img/media-docs.png" />
+                        <span class="media-button-label-text">Documents</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="translate-source-media-button">
+                    <label for="media-button-social">
+                      <input
+                        type="radio"
+                        name="mediatype"
+                        id="media-button-social"
+                        value="social account"
+                        required
+                      />
+                      <span class="media-button-label-wrapper">
+                        <img src="img/media-account.png" />
+                        <span class="media-button-label-text"
+                          >Social account</span
+                        >
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-upload-documents title-counter">
+              <div class="upload-documents-title">
+                Upload your documents
+                <span>(Doc, Docx, Text, PDF, Markdown)</span>
+              </div>
+              <label class="form-button upload-a-file">
+                <input type="file" accept=".doc, .docx, .txt, .pdf" />
+                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                <span>Upload a new file</span>
+              </label>
+              <table class="upload-table">
+                <thead>
+                  <tr>
+                    <th>File name</th>
+                    <th>File size</th>
+                    <th>Number of words</th>
+                    <th>Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="fa fa-file-text" aria-hidden="true"></i>
+                      business_operations.docx
+                    </td>
+                    <td>78kb</td>
+                    <td>842</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="button-remove"
+                        aria-label="Remove"
+                      >
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="fa fa-file-text" aria-hidden="true"></i>
+                      business_financial.docx
+                    </td>
+                    <td>26kb</td>
+                    <td>2,326</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="button-remove"
+                        aria-label="Remove"
+                      >
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="form-choose-language title-counter">
+              <div class="choose-language-title">
+                Choose your languages pairings
+              </div>
+            </div>
+          </form>
         </section>
       </main>
     </div>
