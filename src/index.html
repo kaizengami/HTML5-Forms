@@ -124,7 +124,7 @@
               </fieldset>
             </div>
             <div class="form-upload-documents title-counter">
-              <div class="upload-documents-title">
+              <div class="form-title">
                 Upload your documents
                 <span>(Doc, Docx, Text, PDF, Markdown)</span>
               </div>
@@ -181,8 +181,50 @@
               </table>
             </div>
             <div class="form-choose-language title-counter">
-              <div class="choose-language-title">
+              <div class="form-title">
                 Choose your languages pairings
+              </div>
+              <div class="choose-language-wrapper">
+                <fieldset>
+                  <legend>From</legend>
+                  <label class="choose-language-select">
+                    <select name="language-from" id="language-from">
+                      <option value="Icelandic" selected="">Icelandic</option>
+                      <option value="Ukranian">Ukranian</option>
+                      <option value="English">English</option>
+                    </select>
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <legend class="choose-language-legend-to">To</legend>
+                  <label class="choose-language-select">
+                    <select name="language-to">
+                      <option value="Icelandic">Icelandic</option>
+                      <option value="Ukranian" selected="">Ukranian</option>
+                      <option value="English">English</option>
+                    </select>
+                  </label>
+                  <label class="choose-language-select">
+                    <select name="language-to">
+                      <option value="Icelandic">Icelandic</option>
+                      <option value="Ukranian">Ukranian</option>
+                      <option value="English" selected="">English</option>
+                    </select>
+                  </label>
+                  <button
+                    type="button"
+                    class="form-button choose-language-button-remove"
+                    aria-label="Remove"
+                  >
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="form-button choose-language-button-add"
+                  >
+                    <span>+</span> Add
+                  </button>
+                </fieldset>
               </div>
             </div>
           </form>
