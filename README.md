@@ -1,6 +1,8 @@
 # HTML5 Forms
 
-## [Demo](https://kaizengami.github.io/HTML5-Forms/dist/) | [Task page](https://github.com/kottans/frontend/blob/master/tasks/html5-forms.md)
+## [Demo](https://kaizengami.github.io/HTML5-Forms/dist/) 
+
+###### [Task page](https://github.com/kottans/frontend/blob/master/tasks/html5-forms.md)
 
 ## Project Setup
 
